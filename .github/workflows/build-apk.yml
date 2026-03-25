@@ -23,7 +23,7 @@ jobs:
         run: npm ci || npm install
 
       - name: Build Web App
-        run: npm run build
+        run: npm run build:apk
 
       - name: Setup Java JDK
         uses: actions/setup-java@v4

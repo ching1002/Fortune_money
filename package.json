@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:web": "vite build --base=/Fortune_money/",
+    "build:apk": "vite build --base=./",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build:web",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
