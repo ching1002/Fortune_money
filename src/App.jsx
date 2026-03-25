@@ -293,7 +293,7 @@ const pieData = Object.keys(categoryTotals).map(key => {
 
 return (
 <div className="min-h-screen bg-slate-50 flex justify-center font-sans text-slate-800">
-    <div className="w-full max-w-md bg-white shadow-xl flex flex-col h-screen relative">
+    <div className="w-full max-w-md bg-white shadow-xl flex flex-col h-[100dvh] relative overflow-hidden">
 
         {/* Header */}
         <header className="bg-gradient-to-r from-blue-400 to-blue-500 text-white pt-6 pb-5 px-4 shadow-[0_4px_20px_rgba(236,72,153,0.3)] z-10 rounded-b-[2.5rem]">
@@ -315,7 +315,7 @@ return (
         )}
 
         {/* Main Content Area */}
-        <main className="flex-1 overflow-y-auto p-4 pb-32">
+        <main className="flex-1 overflow-y-auto p-4 pb-12">
 
             {/* TAB 1: ADD EXPENSE */}
             {activeTab === 'add' && (
@@ -603,7 +603,7 @@ return (
         </main>
 
         {/* Bottom Navigation */}
-        <nav className="absolute bottom-0 w-full bg-white/90 backdrop-blur-md border-t border-slate-100 flex justify-around p-2 pb-6 px-4 shadow-[0_-10px_30px_rgba(0,0,0,0.05)] rounded-t-[2.5rem] z-20">
+        <nav className="relative shrink-0 w-full bg-white/90 backdrop-blur-md border-t border-slate-100 flex justify-around p-2 pb-6 px-4 shadow-[0_-10px_30px_rgba(0,0,0,0.05)] rounded-t-[2.5rem] z-20">
           <button 
             onClick={() => setActiveTab('add')}
             className={`flex flex-col items-center justify-center w-20 h-14 transition-all ${activeTab === 'add' ? 'text-blue-500 scale-110 -translate-y-1 drop-shadow-sm' : 'text-slate-400 hover:text-slate-600'}`}
