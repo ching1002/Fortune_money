@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Fortune Money</string>
+    <string name="title_activity_main">Fortune Money</string>
+    <string name="package_name">com.ching1002.fortunemoney</string>
+    <string name="custom_url_scheme">com.ching1002.fortunemoney</string>
+</resources>
